@@ -28,6 +28,8 @@
 | Vigour       |          |           | ✔️                | ✔️       | ✔️          |          |         |         |           | ✔️       | ✔️       | ✔️       | ✔️      |                     |         | ✔️      | ✔️       |
 
 Skill level formula example:
+
+
 Artisan = SkillLevel * NaturalAffinity + sqrt(Creativity) + 0.5 * Dexterity
 
 Architect = SkillLevel * NaturalAffinity + sqrt(Intellect) + 0.5 * Perception + 0.5 * Memory
