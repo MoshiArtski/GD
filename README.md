@@ -63,3 +63,10 @@ Trading = SkillLevel * NaturalAffinity + 0.8 * sqrt(Charisma) + 0.5 * sqrt(Intui
 Police = SkillLevel * NaturalAffinity + sqrt(Willpower) + 0.5 * Agility + 0.5 * Perception
 
 Soldier = SkillLevel * NaturalAffinity + sqrt(Strength) + 0.5 * Agility + 0.5 * Courage
+
+Support formula:
+
+Focus = sqrt(Intellect) + Willpower + Patience - 0.5 * Fatigue + 0.5 * Morale
+
+ProductQuality = (SkillLevel + AttributeBonus) * (1 + Focus) * sqrt(Luck)
+
