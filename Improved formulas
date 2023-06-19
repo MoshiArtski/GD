@@ -1,0 +1,107 @@
+Artisan:
+
+ArtisanSkill = SkillLevel * NaturalAffinity + sqrt(Creativity) + 0.5 * Dexterity
+
+ArtisanLevelRate = sqrt(Creativity + 0.5 * Dexterity) / 10 * (1 + NaturalAffinity) - sqrt(Fatigue)
+
+Architect:
+
+ArchitectSkill = SkillLevel * NaturalAffinity + sqrt(Intellect) + 0.5 * Perception + 0.5 * Memory
+
+ArchitectLevelRate = sqrt(Intellect + 0.5 * Perception + 0.5 * Memory) / 10 * (1 + NaturalAffinity) - sqrt(Fatigue)
+
+Animal Husbandry:
+
+AnimalHusbandrySkill = SkillLevel * NaturalAffinity + sqrt(Empathy) + 0.5 * Endurance
+
+AnimalHusbandryLevelRate = sqrt(Empathy + 0.5 * Endurance) / 10 * (1 + NaturalAffinity) - sqrt(Fatigue)
+
+Arborist:
+
+ArboristSkill = SkillLevel * NaturalAffinity + sqrt(Perception) + 0.5 * Endurance
+
+ArboristLevelRate = sqrt(Perception + 0.5 * Endurance) / 10 * (1 + NaturalAffinity) - sqrt(Fatigue)
+
+Blacksmith:
+
+BlacksmithSkill = SkillLevel * NaturalAffinity + sqrt(Strength) + 0.5 * Creativity
+
+BlacksmithLevelRate = sqrt(Strength + 0.5 * Creativity) / 10 * (1 + NaturalAffinity) - sqrt(Fatigue)
+
+Botanist:
+
+BotanistSkill = SkillLevel * NaturalAffinity + sqrt(Perception) + 0.5 * Patience
+
+BotanistLevelRate = sqrt(Perception + 0.5 * Patience) / 10 * (1 + NaturalAffinity) - sqrt(Fatigue)
+
+Brewer:
+
+BrewerSkill = SkillLevel * NaturalAffinity + sqrt(Intuition) + 0.5 * Patience
+
+BrewerLevelRate = sqrt(Intuition + 0.5 * Patience) / 10 * (1 + NaturalAffinity) - sqrt(Fatigue)
+
+Cooking:
+
+CookingSkill = SkillLevel * NaturalAffinity + sqrt(Creativity) + 0.3 * Memory + 0.7 * Dexterity
+
+CookingLevelRate = sqrt(Creativity + 0.3 * Memory + 0.7 * Dexterity) / 10 * (1 + NaturalAffinity) - sqrt(Fatigue)
+
+Clinician:
+
+ClinicianSkill = SkillLevel * NaturalAffinity + sqrt(Intellect) + 0.5 * Empathy
+
+ClinicianLevelRate = sqrt(Intellect + 0.5 * Empathy) / 10 * (1 + NaturalAffinity) - sqrt(Fatigue)
+
+Farming:
+
+FarmingSkill = SkillLevel * NaturalAffinity + sqrt(Endurance) + 0.5 * Patience
+
+FarmingLevelRate = sqrt(Endurance + 0.5 * Patience) / 10 * (1 + NaturalAffinity) - sqrt(Fatigue)
+
+Fishing:
+
+FishingSkill = SkillLevel * NaturalAffinity + sqrt(Patience) + 0.5 * Dexterity
+
+FishingLevelRate = sqrt(Patience + 0.5 * Dexterity) / 10 * (1 + NaturalAffinity) - sqrt(Fatigue)
+
+Hunting:
+
+HuntingSkill = SkillLevel * NaturalAffinity + sqrt(Agility) + 0.5 * Perception
+
+HuntingLevelRate = sqrt(Agility + 0.5 * Perception) / 10 * (1 + NaturalAffinity) - sqrt(Fatigue)
+
+Mining:
+
+MiningSkill = SkillLevel * NaturalAffinity + sqrt(Strength) + 0.5 * Endurance
+
+MiningLevelRate = sqrt(Strength + 0.5 * Endurance) / 10 * (1 + NaturalAffinity) - sqrt(Fatigue)
+
+Seamster/Seamstress:
+
+SeamsterSkill = SkillLevel * NaturalAffinity + sqrt(Dexterity) + 0.5 * Perception
+
+SeamsterLevelRate = sqrt(Dexterity + 0.5 * Perception) / 10 * (1 + NaturalAffinity) - sqrt(Fatigue)
+
+Trading:
+
+TradingSkill = SkillLevel * NaturalAffinity + 0.8 * sqrt(Charisma) + 0.5 * sqrt(Intuition) + 0.7 * Memory
+
+TradingLevelRate = sqrt(0.8 * Charisma + 0.5 * Intuition + 0.7 * Memory) / 10 * (1 + NaturalAffinity) - sqrt(Fatigue)
+
+Police:
+
+PoliceSkill = SkillLevel * NaturalAffinity + sqrt(Willpower) + 0.5 * Agility + 0.5 * Perception
+
+PoliceLevelRate = sqrt(Willpower + 0.5 * Agility + 0.5 * Perception) / 10 * (1 + NaturalAffinity) - sqrt(Fatigue)
+
+Soldier:
+
+SoldierSkill = SkillLevel * NaturalAffinity + sqrt(Strength) + 0.5 * Agility + 0.5 * Courage
+
+SoldierLevelRate = sqrt(Strength + 0.5 * Agility + 0.5 * Courage) / 10 * (1 + NaturalAffinity) - sqrt(Fatigue)
+
+Focus = sqrt(Intellect) + Willpower + Patience - 0.5 * Fatigue + 0.5 * Morale
+
+Fatigue = TaskDuration * TaskIntensity - 0.5 * Sleep - 0.3 * FoodIntake
+
+ProductQuality = ((SkillLevel + AttributeBonus) * (1 + Focus) * sqrt(Luck)) / 10
